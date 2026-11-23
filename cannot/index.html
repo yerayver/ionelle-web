@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lo que Ionelle no puede hacer — Ionelle</title>
+<meta name="description" content="Los 17 límites de Android que Ionelle no puede saltarse, explicados en lenguaje llano.">
+<link rel="canonical" href="https://ionelle.com/cannot/">
+<link rel="alternate" hreflang="es" href="https://ionelle.com/cannot/">
+<link rel="alternate" hreflang="en" href="https://ionelle.com/en/cannot/">
+<meta name="theme-color" content="#000000">
+<style>
+:root{--bg:#000;--fg:#eef2f6;--muted:#9aa6b2;--accent:#5ee6c8;--accent2:#7aa7ff;--card:#0d1117;--line:#1f2933;--warn:#ffcf6e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f7f9fb;--fg:#0b1220;--muted:#4a5868;--accent:#0f9f84;--accent2:#2f5fd6;--card:#fff;--line:#dde3ea;--warn:#8a5a00}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 32px}
+nav{display:flex;justify-content:space-between;gap:12px;margin-bottom:32px;font-size:.95rem}
+nav a{color:var(--accent)}
+h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin:32px 0 8px}
+h3{font-size:1rem;margin:20px 0 4px}
+p,li{color:var(--fg)}
+.meta{color:var(--muted);margin:0 0 24px}
+.notice{border:1px solid var(--warn);color:var(--warn);border-radius:12px;padding:12px 16px;margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:12px 0}
+.card h3{margin-top:0}
+a{color:var(--accent)}
+ul,ol{padding-left:1.2em}
+ol li{margin:0 0 8px}
+.table{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:8px 8px 8px 0}
+th{color:var(--muted);font-weight:600}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="/">← Ionelle</a><a href="/en/cannot/" hreflang="en" lang="en">English</a></nav>
+  <h1>Lo que Ionelle no puede hacer</h1>
+  <p class="meta">Versión 22 de noviembre de 2026</p>
+  <p class="notice"><strong>Pendiente de revisión legal.</strong> Este texto aún no lo ha revisado un asesor legal y puede cambiar antes del lanzamiento público.</p>
+<p>Ionelle solo promete lo que Android permite a una app de Google Play. Esto es lo que no puede hacer, y por qué. La misma lista está en la app, en Ajustes &gt; Ayuda &gt; «Lo que Ionelle no puede hacer».</p>
+  <ol>
+    <li id="p1">Cortar o limitar la carga. Android no se lo permite a las apps de Google Play; solo se puede con root, y Ionelle no usa root. Te avisamos y te llevamos al límite de carga de tu móvil, si lo tiene.</li>
+    <li id="p2">Liberar RAM, cerrar otras apps o acelerar el móvil. Desde Android 14, una app solo puede detener sus propios procesos, y forzar la detención de apps en el modo avanzado no hace el móvil más rápido.</li>
+    <li id="p3">Enfriar el móvil. Solo te informamos de su estado térmico.</li>
+    <li id="p4">Medir el consumo real de energía de cada app sin el modo avanzado. Con él, la cifra es una estimación basada en el perfil de energía que da tu fabricante.</li>
+    <li id="p5">Leer la salud oficial de la batería, su fecha de fabricación o la de primer uso sin el modo avanzado. Te damos una estimación con su margen.</li>
+    <li id="p6">Garantizar que la capacidad estimada sea exacta: la unidad y el signo de la lectura de corriente cambian según el fabricante.</li>
+    <li id="p7">Abrir las carpetas Android/data y Android/obb sin el modo avanzado.</li>
+    <li id="p8">Limpiar la caché de otras apps sin el modo avanzado.</li>
+    <li id="p9">Ver todas las apps instaladas sin el modo avanzado: solo las que tienen icono en tu pantalla de inicio.</li>
+    <li id="p10">Ponerse en marcha al enchufar el cargador si no lo has activado tú, ni arrancar un servicio en segundo plano sin una acción tuya o una exención de Android.</li>
+    <li id="p11">Impedir que Android o tu fabricante duerma o cierre apps. Te guiamos y, en el modo avanzado, lo ajustamos de forma reversible y sin garantías.</li>
+    <li id="p12">Garantizar hoy que el modo avanzado (Shizuku) funcione en Android 17.</li>
+    <li id="p13">Hacer toques en Ajustes por ti: no usamos el servicio de accesibilidad.</li>
+    <li id="p14">Analizar todas tus fotos y vídeos sin que elijas las carpetas.</li>
+    <li id="p15">Arreglar un fallo del sistema o deshacer una actualización: lo medimos y te ayudamos a informar de él.</li>
+    <li id="p16">Deshacer los cambios del modo avanzado si desinstalas Ionelle o borras sus datos: deshazlos antes desde el registro de cambios. En Ajustes solo se deshace lo que Android permite (por ejemplo, habilitar una app desactivada); una app preinstalada desinstalada para tu usuario no se puede recuperar desde Ajustes: hace falta ADB o, en el peor caso, restablecer el móvil de fábrica.</li>
+    <li id="p17">Buscar archivos en la raíz del almacenamiento o en Download (por ejemplo, APK descargados): el selector de carpetas de Android no lo permite y no usamos el acceso a todos los archivos.</li>
+  </ol>
+  <p>«Modo avanzado» es el modo experimental que usa la app de terceros Shizuku, opcional y reversible. Si algo de esta lista cambia con una versión nueva de Android, actualizaremos la página. ¿Dudas? <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a>.</p>
+</main>
+<footer>
+  © 2026 Digital Soul Technology, S.L. · <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a> · <a href="https://www.digitalsoultech.com/">digitalsoultech.com</a><br>
+  <a href="/privacy/">Privacidad</a> · <a href="/terms/">Términos</a> · <a href="/cannot/">Lo que no puede hacer</a> · <a href="/support/">Soporte</a>
+</footer>
+</body>
+</html>

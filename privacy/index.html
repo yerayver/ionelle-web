@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad — Ionelle</title>
-<meta name="description" content="Política de privacidad de Ionelle (provisional): qué se queda en tu móvil, qué se envía y cómo borrarlo.">
+<meta name="description" content="Política de privacidad de Ionelle: qué se queda en tu móvil, qué se envía, a quién y cómo borrarlo.">
 <link rel="canonical" href="https://ionelle.com/privacy/">
 <link rel="alternate" hreflang="es" href="https://ionelle.com/privacy/">
 <link rel="alternate" hreflang="en" href="https://ionelle.com/en/privacy/">
@@ -19,12 +19,19 @@ nav{display:flex;justify-content:space-between;gap:12px;margin-bottom:32px;font-
 nav a{color:var(--accent)}
 h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
 h2{font-size:1.15rem;margin:32px 0 8px}
+h3{font-size:1rem;margin:20px 0 4px}
 p,li{color:var(--fg)}
 .meta{color:var(--muted);margin:0 0 24px}
 .notice{border:1px solid var(--warn);color:var(--warn);border-radius:12px;padding:12px 16px;margin:0 0 24px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:12px 0}
+.card h3{margin-top:0}
 a{color:var(--accent)}
-ul{padding-left:1.2em}
+ul,ol{padding-left:1.2em}
+ol li{margin:0 0 8px}
+.table{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:8px 8px 8px 0}
+th{color:var(--muted);font-weight:600}
 footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
 footer a{color:inherit}
 </style>
@@ -33,47 +40,78 @@ footer a{color:inherit}
 <main>
   <nav><a href="/">← Ionelle</a><a href="/en/privacy/" hreflang="en" lang="en">English</a></nav>
   <h1>Política de privacidad</h1>
-  <p class="meta">Versión provisional · 16 de noviembre de 2026</p>
-  <p class="notice"><strong>Pendiente de revisión legal.</strong> Esta es una versión provisional y mínima para las pruebas de la app. La sustituirá la política completa antes del lanzamiento público.</p>
+  <p class="meta">Versión 22 de noviembre de 2026</p>
+  <p class="notice"><strong>Pendiente de revisión legal.</strong> Este texto aún no lo ha revisado un asesor legal y puede cambiar antes del lanzamiento público.</p>
+<h2>En resumen</h2>
+  <ul>
+    <li>Ionelle mide tu batería y tu sistema <strong>en tu móvil</strong>. No tenemos servidores propios ni cuentas de usuario.</li>
+    <li>Las estadísticas de uso y los informes de fallos solo se envían si los aceptas, y puedes retirarlo cuando quieras.</li>
+    <li>La versión gratuita mostrará anuncios de Google AdMob, que recoge datos para mostrarlos. Ionelle Premium no carga el SDK de anuncios.</li>
+    <li>Hoy, en las versiones de prueba, ni las estadísticas ni los anuncios están activos.</li>
+  </ul>
 
   <h2>Responsable</h2>
   <p>Digital Soul Technology, S.L., NIF B16790040, con domicilio en Camino de los Cenagales 31A, 28055 Madrid (España). Contacto de privacidad: <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a>.</p>
 
   <h2>Lo que se queda en tu móvil</h2>
-  <p>Ionelle mide y analiza tu batería y tu sistema <strong>en el propio dispositivo</strong>. No tenemos servidores propios y estos datos no se envían a nadie:</p>
+  <p>Estos datos se tratan <strong>solo en el dispositivo</strong> y no se envían a nadie, ni a nosotros:</p>
   <ul>
     <li>Mediciones e historial de batería, de carga y de descarga.</li>
     <li>Si das el acceso de uso: solo cuándo se enciende y se apaga la pantalla, para calcular el gasto en reposo. No guardamos qué apps usas.</li>
     <li>El informe para el fabricante (PDF) se crea en el móvil. Solo incluye la lista de tus apps si marcas la casilla, y solo sale del móvil si tú decides compartirlo.</li>
-    <li>Tus ajustes. Si tienes activada la copia de seguridad de Android, solo el archivo de ajustes se incluye en esa copia (la gestiona Google en tu cuenta).</li>
+    <li>Si eliges carpetas para buscar archivos grandes o duplicados, el análisis se hace en el móvil y solo en esas carpetas.</li>
+    <li>Si usas el modo avanzado (Shizuku), el registro de cambios se guarda en el móvil.</li>
+    <li>El estado de tu suscripción (producto, estado, fecha de compra, plan, fin de la prueba e importe), para saber si tienes Premium sin conexión y para los avisos de renovación. No guardamos el token de compra, el número de pedido ni datos de tu cuenta.</li>
+    <li>Tus ajustes y tu decisión sobre las estadísticas. Si tienes activada la copia de seguridad de Android, solo el archivo de ajustes se incluye en esa copia (la gestiona Google en tu cuenta).</li>
   </ul>
+  <p>Ionelle no lee el contenido de tus notificaciones, mensajes, fotos, contactos ni ubicación precisa, y no vende datos.</p>
 
   <h2>Estadísticas e informes de fallos (opcional)</h2>
-  <p>Solo si aceptas en la app (y puedes cambiarlo cuando quieras en Ajustes &gt; Privacidad), Ionelle envía estadísticas de uso (por ejemplo, qué secciones abres y, cuando haya suscripción, las compras y suscripciones dentro de la app: producto y precio) e informes de fallos a <strong>Google Firebase</strong> (Google Analytics for Firebase y Firebase Crashlytics), que tratan los datos por encargo nuestro. Llevan un identificador aleatorio de esta instalación y datos básicos del dispositivo, como el modelo y la versión de Android; Google deduce un país o una zona aproximada a partir de la dirección IP. Ionelle nunca añade la lista de tus apps ni tus notificaciones. Finalidad: saber qué falla y qué partes de la app se usan para mejorarla. Conservación: Crashlytics, 90 días; las estadísticas, el plazo que configuremos en Google Analytics (pendiente de fijar). Si no aceptas, no se envía nada.</p>
+  <p>Solo si aceptas en la app (puedes cambiarlo cuando quieras en Ajustes &gt; Privacidad), Ionelle envía datos a <strong>Google Firebase</strong>, que los trata por encargo nuestro:</p>
+  <div class="card">
+    <h3>Firebase Crashlytics (informes de fallos)</h3>
+    <p>Cuando la app falla: la traza del fallo, el estado de la app en ese momento, datos del dispositivo (por ejemplo, modelo y versión de Android) y un identificador aleatorio de la instalación. Se conservan <strong>90 días</strong>; después Google empieza a borrarlos de sus sistemas.</p>
+  </div>
+  <div class="card">
+    <h3>Google Analytics for Firebase (estadísticas de uso)</h3>
+    <p>Un identificador aleatorio de la instalación, una ubicación aproximada (país o zona) que Google deduce de la dirección IP enmascarada, las pantallas y sesiones, las compras y suscripciones dentro de la app (producto y precio) y solo dos eventos propios: que terminaste la bienvenida y qué secciones abres. Analytics no recoge el ID de publicidad y tenemos desactivado Google Signals (no se cruza con tu cuenta de Google). Los datos por usuario y por evento se conservan <strong>2 meses</strong> y el plazo no se alarga con la actividad nueva; los informes agregados, que no identifican a nadie, no tienen ese límite.</p>
+  </div>
+  <p>Ionelle nunca añade a estos datos la lista de tus apps, tus notificaciones ni tus mediciones de batería. <strong>Finalidad:</strong> saber qué falla y qué partes de la app se usan, para mejorarla. <strong>Base legal:</strong> tu consentimiento (art. 6.1.a del RGPD), que puedes retirar en cualquier momento; retirarlo detiene los envíos, pero no borra lo ya enviado. Si no aceptas, no se envía nada y la app funciona igual.</p>
 
   <h2>Anuncios (solo en la versión gratuita)</h2>
-  <p>La versión gratuita mostrará anuncios de <strong>Google AdMob</strong>. Antes de cargarlos, donde la ley lo exige, te pedimos tu consentimiento con la herramienta de Google (User Messaging Platform). Para mostrar anuncios, medirlos y prevenir el fraude, el SDK de Google recoge y comparte con Google la dirección IP (de la que se deduce una ubicación aproximada), tus interacciones con los anuncios y la app, datos de diagnóstico y el ID de publicidad del dispositivo. Puedes restablecer o eliminar tu ID de publicidad en los ajustes de Android. Más información: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos de las apps de sus partners</a>. Ionelle Premium no carga el SDK de anuncios.</p>
-  <p>Hoy, en las versiones de prueba, ni los anuncios ni las estadísticas están activos: la app no envía datos.</p>
+  <p>La versión gratuita mostrará anuncios de <strong>Google AdMob</strong>; todavía no están activos. Nunca aparecen en notificaciones, widgets ni en la pantalla de bloqueo, y no se cargan en segundo plano. Antes de cargarlos, donde la ley lo exige, te pedimos el consentimiento con la herramienta de Google (User Messaging Platform), que guarda tu elección en el móvil.</p>
+  <p>Para mostrar anuncios, medirlos y prevenir el fraude, el SDK de Google recoge y comparte con Google la dirección IP (de la que se deduce una ubicación aproximada), tus interacciones con la app y los anuncios (abrir la app, toques, vídeos vistos), datos de diagnóstico de la app y del SDK, el ID de publicidad del dispositivo, el ID de conjunto de apps y, si procede, otros identificadores de las cuentas del dispositivo. Google trata estos datos también para sus propios fines: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos de las apps que usan sus servicios</a>. Si rechazas la personalización, los anuncios no son personalizados, pero el SDK sigue recogiendo datos para mostrarlos. Puedes restablecer o eliminar tu ID de publicidad en los ajustes de Android.</p>
+  <p><strong>Ionelle Premium no carga el SDK de anuncios</strong>: es la forma de usar Ionelle sin ellos.</p>
 
-  <h2>Compras</h2>
-  <p>Las suscripciones se pagan con Google Play. No recibimos los datos de tu tarjeta ni de tu cuenta de pago.</p>
+  <h2>Compras y suscripciones</h2>
+  <p>Las suscripciones se compran y se pagan con <strong>Google Play</strong>, que trata tus datos de pago según la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. No recibimos los datos de tu tarjeta ni de tu cuenta de pago. Ionelle consulta a Google Play si tienes una suscripción activa y guarda solo lo indicado arriba, en el móvil. <strong>Base legal:</strong> el contrato de suscripción. Las condiciones están en los <a href="/terms/">términos de uso</a>.</p>
 
-  <h2>Cómo borrar tus datos</h2>
+  <h2>Quién recibe datos y dónde</h2>
   <ul>
-    <li>Los datos del móvil se borran al desinstalar Ionelle o con Ajustes de Android &gt; Apps &gt; Ionelle &gt; Almacenamiento &gt; Borrar datos.</li>
+    <li><strong>Google (Firebase)</strong>, como encargado del tratamiento, solo si aceptas las estadísticas.</li>
+    <li><strong>Google (AdMob)</strong>, en la versión gratuita, para sus fines de publicidad, analítica y prevención del fraude.</li>
+    <li><strong>Google Play</strong>, para las compras.</li>
+  </ul>
+  <p>Google puede tratar los datos fuera del Espacio Económico Europeo. Google declara cumplir el Marco de Privacidad de Datos UE-EE. UU. Los datos viajan cifrados (HTTPS/TLS).</p>
+
+  <h2>Cómo borrar tus datos y tus derechos</h2>
+  <ul>
+    <li>Los datos del móvil se borran al desinstalar Ionelle o con Ajustes de Android &gt; Apps &gt; Ionelle &gt; Almacenamiento &gt; Borrar datos. Si usas el modo avanzado, deshaz antes sus cambios desde el registro: borrar los datos no los revierte (ver <a href="/cannot/">lo que Ionelle no puede hacer</a>, punto 16).</li>
     <li>Para dejar de enviar estadísticas e informes de fallos, desactívalo en Ionelle, en Ajustes &gt; Privacidad.</li>
-    <li>Para ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, escribe a <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a>. Ionelle no tiene cuentas: los datos enviados a Firebase solo llevan un identificador aleatorio de la instalación y, hasta que la app te permita incluirlo en tu petición, no podemos localizarlos. Los informes de fallos se borran solos a los 90 días. También puedes reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</li>
-    <li>Los datos que recoge el SDK de anuncios los trata Google y no pasan por nosotros, así que no podemos borrarlos; usa los controles de Google y de Android (por ejemplo, restablecer o eliminar el ID de publicidad, que no borra lo ya recogido).</li>
+    <li>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, y retirar tu consentimiento, escribiendo a <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a>. Ionelle no tiene cuentas: los datos enviados a Firebase solo llevan un identificador aleatorio de la instalación y, mientras la app no te permita incluirlo en tu petición, no podemos localizarlos. Los informes de fallos se borran solos a los 90 días y los datos por usuario de las estadísticas, a los 2 meses.</li>
+    <li>Los datos que recoge el SDK de anuncios los trata Google y no pasan por nosotros, así que no podemos borrarlos; usa los controles de Google y de Android (restablecer o eliminar el ID de publicidad evita asociar datos nuevos a ese ID, pero no borra lo ya recogido).</li>
+    <li>Puedes reclamar ante la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</li>
   </ul>
 
   <h2>Menores</h2>
   <p>Ionelle está dirigida a personas de 18 años o más y no está pensada para menores de edad.</p>
 
   <h2>Cambios</h2>
-  <p>Si cambia lo que hace la app con tus datos, actualizaremos esta página y su fecha antes del cambio.</p>
+  <p>Si cambia lo que hace la app con tus datos, actualizaremos esta página y su fecha antes del cambio y, si hace falta tu consentimiento, te lo pediremos de nuevo en la app.</p>
 </main>
 <footer>
-  © 2026 Digital Soul Technology, S.L. · <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a> · <a href="https://www.digitalsoultech.com/">digitalsoultech.com</a>
+  © 2026 Digital Soul Technology, S.L. · <a href="mailto:soporte@ionelle.com">soporte@ionelle.com</a> · <a href="https://www.digitalsoultech.com/">digitalsoultech.com</a><br>
+  <a href="/privacy/">Privacidad</a> · <a href="/terms/">Términos</a> · <a href="/cannot/">Lo que no puede hacer</a> · <a href="/support/">Soporte</a>
 </footer>
 </body>
 </html>
